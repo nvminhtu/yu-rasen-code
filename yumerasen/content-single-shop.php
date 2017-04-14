@@ -60,14 +60,14 @@
                 <div class="box_img_shop clearfix">
                   <?php
                     $picID = get_sub_field('picture_thumb');
-                    $picS = wp_get_attachment_image_src($picID, 'pic_thumbnail');
+                    $picS = wp_get_attachment_image_src($picID, 'pic_shop_thumbnail');
                     $picL = wp_get_attachment_image_src($picID, 'full');
                     $smallURL = $picS[0];
                     $largeURL = $picL[0];
                   ?>
                   <p class="shop_img01"><a href="<?php echo $largeURL; ?>" data-lightbox="shop_detail">
                   <span class="img_title"><?php the_sub_field('picture_title'); ?></span>
-                  <img src="<?php echo $smallURL; ?>" alt="" width="<?php echo $picS[1]; ?>" height="<?php echo $picS[2]; ?>" /></a></p>
+                  <img src="<?php echo $smallURL; ?>" alt="" width="198" height="150" /></a></p>
                   <p class="shop_cm_img01"><?php the_sub_field('picture_comment'); ?></p>
                 </div>
                 <?php
